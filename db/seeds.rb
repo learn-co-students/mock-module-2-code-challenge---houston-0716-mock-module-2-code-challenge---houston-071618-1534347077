@@ -1,6 +1,11 @@
 Employee.destroy_all
 Dog.destroy_all
 
+Dog.create(name: "Fluffy", breed: "Maltese", age: "2")
+Dog.create(name: "Spike", breed: "Shepherd", age: "5")
+Dog.create(name: "Yolo", breed: "Boxer", age: "6")
+Dog.create(name: "Gruffy", breed: "Mutt", age: "8")
+Dog.create(name: "Geppetto", breed: "Coton", age: "2")
 
 Employee.create(first_name: "Jim", last_name: "Halpert", alias: "Big Tuna", title: "Regional Co-Manager", office: "Scranton", dog_id: 2, img_url: "https://s-i.huffpost.com/gen/2028878/images/n-UPROXX-628x314.jpg")
 Employee.create(first_name: "Michael", last_name: "Scott", alias: "Prison Mike", title: "Regional Manager", office: "Scranton", dog_id: 1, img_url: "https://i2.wp.com/mtncatholic.com/wp-content/uploads/2016/10/6357600113572837231773916132_michael-scott-s-top-tantrums.png?fit=500%2C359")
@@ -14,6 +19,5 @@ Employee.create(first_name: "Oscar", last_name: "Martinez", alias: "none", title
 Employee.create(first_name: "Darryl", last_name: "Philbin", alias: "none", title: "Warehouse Assistant", office: "Scranton", dog_id: 5, img_url: "https://vignette.wikia.nocookie.net/theoffice/images/4/49/2009DarrylCroppeed.PNG/revision/latest/scale-to-width-down/1000?cb=20170701085636")
 
 
-5.times do
-  Dog.create(name: Faker::Dog.name, breed: Faker::Dog.breed, age: Faker::Dog.age)
-end
+
+
