@@ -13,7 +13,7 @@ class EmployeesController < ApplicationController
 
 	def create
 
-		if @employee = Employee.create(dog_params)
+		if @employee = Employee.create(employee_params)
 			redirect_to @employee
 		else
 			render :new
@@ -33,7 +33,7 @@ class EmployeesController < ApplicationController
 		else
 			render :edit
 		end
-		
+
 	end
 
 	def destroy
