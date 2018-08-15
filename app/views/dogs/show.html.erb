@@ -1,0 +1,6 @@
+<div><%= @dog.name %></div>
+<div><%= @dog.breed %></div>
+<div><%= @dog.age %></div>
+<% @dog.employees.each do |employee| %>
+  <div><%= employee.first_name %></div>
+<% end %>
