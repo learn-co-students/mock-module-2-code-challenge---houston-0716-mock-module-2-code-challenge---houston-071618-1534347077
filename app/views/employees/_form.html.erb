@@ -1,0 +1,37 @@
+<%= form_with(model: employee) do |form| %>
+  
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+   <div class="field">
+    <%= form.label :alias %>
+    <%= form.text_field :alias %>
+  </div>
+
+   <div class="field">
+    <%= form.label :office %>
+    <%= form.text_field :office %>
+  </div>
+
+   <div class="field">
+    <%= form.label :Image %>
+    <%= form.text_field :img_url %>
+  </div>
+
+  
+
+  <div class="field">
+    <%= form.select :dog_id, @dogs.collect {|dog| [dog.name, dog.id]} %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

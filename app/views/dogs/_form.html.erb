@@ -1,0 +1,21 @@
+<%= form_with(model: dog) do |form| %>
+  
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :breed %>
+    <%= form.text_area :breed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.text_area :age %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
