@@ -1,0 +1,26 @@
+<h2>Edit Employee</h2>
+<div>
+    <%= form_with model:@employee do |f| %>
+        <div><%= f.label :first_name %>:
+        <%= f.text_field :first_name %></div></br>
+
+        <div><%= f.label :last_name %>:
+        <%= f.text_field :last_name %></div></br>
+
+        <div><%= f.label :alias %>:
+        <%= f.text_field :alias %></div></br>
+
+        <div><%= f.label :title %>:
+        <%= f.text_field :title %></div></br>
+
+        <div><%= f.label :office %>:
+        <%= f.text_field :office %></div></br>
+
+        <div><%= f.label :img_url %>:
+        <%= f.text_field :img_url %></div></br>
+
+        <div><%= f.select :dog_id, Dog.all.map { |dog| [ dog.name, dog.id ] } %></div></br>
+
+        <%= f.submit %>
+    <% end %>
+</div>
