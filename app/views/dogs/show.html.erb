@@ -1,0 +1,14 @@
+Dog show page entered!<br>
+
+<ul>
+  Name: <%= @dog.name %><br>
+  Breed: <%= @dog.breed %><br>
+  Age: <%= @dog.age %><br>
+  <% owners = @dog.employees.map { |ee| ee.name } %>
+  Owner(s):<br>
+  <% owners.each do |owner| %>
+  <ul>
+    <%= owner %>
+  </ul>
+  <% end %>
+</ul>

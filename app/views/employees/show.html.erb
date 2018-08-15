@@ -1,0 +1,16 @@
+EE show page entered!
+
+<h2><%= @employee.name %></h2>
+
+First Name:<%= @employee.first_name %><br>
+Last Name:<%= @employee.last_name %><br>
+AKA:<%= @employee.alias %><br>
+Job Title:<%= @employee.title %><br>
+Office:<%= @employee.office %><br>
+Dog:<br>
+<ul>
+Name:<%= @employee.dog.name %><br>
+Breed:<%= @employee.dog.breed %><br>
+Age:<%= @employee.dog.age %><br>
+</ul>
+Image Url:<%= @employee.img_url %><br>

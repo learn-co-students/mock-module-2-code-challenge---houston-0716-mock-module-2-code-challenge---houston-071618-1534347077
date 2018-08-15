@@ -1,0 +1,6 @@
+EE index page entered!<br>
+<% @employees.each do |ee| %>
+
+  <%= link_to ee.name, employee_path(ee) %><br>
+
+<% end %>
