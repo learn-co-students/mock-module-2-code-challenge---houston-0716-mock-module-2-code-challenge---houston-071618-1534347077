@@ -1,0 +1,9 @@
+<h3>Create New Dunder Mifflin Employee</h3>
+<%= form_with model: @employee do |form| %>
+  <%= form.text_field :first_name, placeholder: "first_name" %>
+  <%= form.text_field :last_name, placeholder: "last_name" %>
+  <%= form.text_field :alias, placeholder: "alias" %>
+  <%= form.text_field :title, placeholder: "title" %>
+    <%= form.text_field :office, placeholder: "office" %>
+  <%= form.submit %>
+<% end %>
