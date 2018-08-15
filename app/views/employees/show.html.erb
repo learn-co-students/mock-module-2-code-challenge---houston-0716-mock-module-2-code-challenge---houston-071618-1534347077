@@ -1,0 +1,21 @@
+<h1><%= @employee.first_name + " " + @employee.last_name %></h1>
+<div>
+<label>alias</label>
+<%= @employee.alias %>
+</div><div>
+<label>title</label>
+<%= @employee.title %>
+</div><div>
+<label>office</label>
+<%= @employee.office %>
+</div><div>
+<label>dog ID</label>
+<%= @employee.dog_id %><br>
+<label>DOG:</label> <%= link_to Dog.find(@employee.dog_id).name, Dog.find(@employee.dog_id) %>
+</div><div>
+<label><%= @employee.img_url %></label><br><br>
+<image src="<%= @employee.img_url %>" height=500px width=500px>
+</div>
+
+
+<%= link_to 'Remove', @employee, method: :delete, data: { confirm: 'Are you sure?' } %>

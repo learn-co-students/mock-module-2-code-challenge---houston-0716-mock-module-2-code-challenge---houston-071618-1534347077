@@ -1,0 +1,15 @@
+<h1><%= @dog.name%></h1>
+<div>
+<label>breed:</label>
+<%= @dog.breed %>
+</div><div>
+<label>age:</label>
+<%= @dog.age %>
+</div><div>
+<label>Human Slaves:</label>
+<% Employee.all.map do |employee| %>
+  <% if employee.dog_id == @dog.id %>
+  <div>
+    <ls><%=link_to employee.first_name + " " + employee.last_name, employee %></ls></div>
+    <%end%>
+<%end%>
