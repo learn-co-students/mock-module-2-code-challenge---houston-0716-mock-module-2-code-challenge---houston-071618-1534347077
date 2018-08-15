@@ -1,0 +1,9 @@
+<h1><%= link_to "Dog: ", dogs_path %><%=@dog.name%></h1>
+<div>
+    <p>Name: <%= @dog.name %></p>
+    <p>Breed: <%= @dog.breed %></p>
+    <p>Age: <%= @dog.age %></p>
+    
+    <div><%= button_to "Edit Dog", edit_dog_path, method: :get %></div>
+    <div><%= button_to "Delete Dog", dog_path, method: :delete, data: {confirm: 'Are you sure?'} %></div>
+</div>
