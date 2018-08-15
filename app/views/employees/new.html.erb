@@ -1,0 +1,12 @@
+
+<h3>Create New Employee</h3>
+<%= form_with model: @employee do |form| %>
+  <%= form.text_field :first_name, placeholder: 'first name' %>
+  <%= form.text_field :last_name, placeholder: 'last name' %>
+  <%= form.text_field :alias, placeholder: 'alias' %>
+  <%= form.text_field :title, placeholder: 'title' %>
+  <%= form.text_field :office, placeholder: 'office' %>
+  <%= form.text_field :img_url, placeholder: 'img_url' %>
+  <%= form.select :dog_id, Dog.all.map { |dog| [ dog.name, dog.id ] } %>
+  <%= form.submit %>
+<% end %>

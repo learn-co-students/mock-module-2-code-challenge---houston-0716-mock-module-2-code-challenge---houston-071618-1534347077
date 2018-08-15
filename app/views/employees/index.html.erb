@@ -1,0 +1,10 @@
+<h1><%= link_to "Create New Employee", new_employee_path %></h1>
+<table>
+  <% @employees.each do |employee| %>
+<tr>
+<td> <%= link_to employee.first_name, employee %> </td>
+
+<td> <%= button_to 'Edit', edit_employee_path(employee), method: 'get' %></td>
+</tr>
+<% end %>
+</table>
