@@ -1,0 +1,17 @@
+<h3>Create New Employee</h3>
+<%= form_for @employee do |f| %>
+  <%= f.text_field :first_name, placeholder: "first name" %><br>
+  <%= f.text_field :last_name, placeholder: "last name" %><br>
+  <%= f.text_field :alias, placeholder: "alias" %><br>
+  <%= f.text_field :title, placeholder: "title" %><br>
+  <%= f.text_field :office, placeholder: "office" %><br>
+  <%= f.text_field :img_url, placeholder: "image url" %><br>
+  <%= f.select :dog_name do %> 
+    <% @dogs.each.do |dog| %>
+      <%= content_tag(:option, dog.id, value: dog.name) %>
+    <% end %>
+  <% end %>
+  <br>
+  
+  <%= f.submit %>
+<% end %>
