@@ -1,0 +1,9 @@
+<h2> Create New Dog: </h2>
+
+<%= form_with model: Dog.new do |form| %>
+  <%= form.text_field :name, placeholder: "Dog Name" %><br>
+  <%= form.text_field :breed, placeholder: "Dog Breed" %><br>
+  <%= form.text_field :age, placeholder: "Dog Age" %><br>
+  <%= form.text_field :employee_id, placeholder: "Dog's Employee ID" %><br><br>
+  <%= form.submit %>
+<% end %>

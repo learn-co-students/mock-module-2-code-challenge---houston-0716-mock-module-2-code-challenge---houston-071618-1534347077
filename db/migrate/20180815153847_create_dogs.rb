@@ -4,6 +4,7 @@ class CreateDogs < ActiveRecord::Migration[5.1]
       t.string :name
       t.string :breed
       t.string :age
+      t.belongs_to :employee, foreign_key: true
 
       t.timestamps
     end

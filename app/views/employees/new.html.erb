@@ -1,0 +1,11 @@
+<h2> Create New Employee: </h2>
+
+<%= form_with model: Employee.new do |form| %>
+  <%= form.text_field :first_name, placeholder: "Employee First Name" %><br>
+  <%= form.text_field :last_name, placeholder: "Employee Last Name" %><br>
+  <%= form.text_field :alias, placeholder: "Alias" %><br>
+  <%= form.text_field :title, placeholder: "Job Title" %><br>
+  <%= form.number_field :dog_id, placeholder: "Employee Dog ID" %><br>
+  <%= form.text_field :img_url, placeholder: "Employee Photo Link" %><br><br>
+  <%= form.submit %>
+<% end %>

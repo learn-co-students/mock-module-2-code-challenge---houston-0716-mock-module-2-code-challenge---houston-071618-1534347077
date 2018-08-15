@@ -1,0 +1,11 @@
+<h2> Edit Employee: </h2>
+
+<%= form_with model: Employee.new do |form| %>
+  <%= form.text_field :first_name %><br>
+  <%= form.text_field :last_name %><br>
+  <%= form.text_field :alias %><br>
+  <%= form.text_field :title %><br>
+  <%= form.number_field :dog_id %><br>
+  <%= form.text_field :img_url %><br><br>
+  <%= form.submit %>
+<% end %>
