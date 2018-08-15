@@ -1,0 +1,10 @@
+
+<h1><%= link_to "Create New Dog", new_dog_path %></h1>
+<table>
+  <% @dogs.each do |dog| %>
+<tr>
+<td> <%= link_to dog.name, dog %> </td>
+<td> <%= button_to 'Edit', edit_dog_path(dog), method: 'get' %></td>
+</tr>
+<% end %>
+</table>
