@@ -1,0 +1,14 @@
+<%= @dog.name %>
+<br>
+<%= @dog.age %>
+<br>
+<%= @dog.breed %>
+<br>
+
+
+
+	<% @dog.employees.each do |employee| %>
+		<%= employee.first_name %>
+		<%= employee.last_name %>
+		<br>
+	<% end %>
