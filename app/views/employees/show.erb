@@ -1,0 +1,23 @@
+<h1>Employee</h1>
+<h2><%= @employee.first_name %><%= @employee.last_name%></h2><br>
+
+<h3>Alias</h3>
+<h3><%=@employee.alias %></h3><br>
+
+<h3>title</h3>
+<h3><%= @employee.title %></h3><br>
+
+<h3>office</h3>
+<h3><%= @employee.office %></h3><br>
+
+<h3>image_url</h3>
+<p><img src=<%= @employee.img_url %>></p>
+
+
+<h3>dog</h3>
+
+<h3><%= @employee.dog_id %></h3><br>
+
+<h6><%= link_to 'home', employees_path %></h6> 
+<h6><%= link_to 'edit', edit_employee_path %></h6>
+<%= link_to 'Destroy', @employee, method: :delete, data: { confirm: 'employee will be removed. OK to contunue' } %>

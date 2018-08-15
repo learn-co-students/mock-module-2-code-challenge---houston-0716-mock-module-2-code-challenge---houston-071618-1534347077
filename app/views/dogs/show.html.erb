@@ -1,0 +1,12 @@
+<h1>Dog!!!</h1>
+<h2><%= @dog.name %></h2><br>
+
+<h3>Breed.</h3>
+<h3><%=@dog.breed %></h3><br>
+
+<h3>Age</h3>
+<h3><%= @dog.age %></h3><br>
+
+<h6><%= link_to 'home', dogs_path %></h6> 
+<h6><%= link_to 'edit', edit_dog_path %></h6>
+<%= link_to 'Destroy', @dog, method: :delete, data: { confirm: 'dog will be removed. OK to contunue' } %>
