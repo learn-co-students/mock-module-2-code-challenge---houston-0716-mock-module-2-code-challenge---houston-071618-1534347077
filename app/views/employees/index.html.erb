@@ -1,0 +1,8 @@
+<h1>All Employees</h1>
+<p>Employee index page all employees click on each to take you to the single show page</p>
+
+<ul>
+<% @employees.each do |e| %>
+<li><%= link_to e.first_name, employee_path(e) %></li>
+<% end %>
+</ul>
