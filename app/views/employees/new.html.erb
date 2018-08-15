@@ -1,0 +1,11 @@
+<h3> Create an Employee</h3>
+<%= form_for @employee do |f| %>
+  <%= f.text_field :first_name, placeholder: 'first name' %><br />
+  <%= f.text_field :last_name, placeholder: 'last name' %><br />
+  <%= f.text_field :alias, placeholder: 'alias' %><br />
+  <%= f.text_field :title, placeholder: 'title' %><br />
+  <%= f.text_field :office, placeholder: 'office' %><br />
+  <%= f.text_field :dog_id, placeholder: 'dog id' %><br />
+  <%= f.text_field :img_url, placeholder: 'image url' %><br />
+  <%= f.submit %>
+<% end %>
