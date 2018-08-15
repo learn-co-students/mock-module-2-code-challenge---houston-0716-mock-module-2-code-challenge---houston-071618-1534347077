@@ -1,0 +1,10 @@
+<h3>Create New Dog</h3>
+<%= form_for @dog do |f| %>
+  <%= f.text_field :name, placeholder: "name" %><br>
+  <%= f.text_field :breed, placeholder: "breed" %><br>
+  <%= f.number_field :age, placeholder: "age" %><br>
+  
+  <br>
+  
+  <%= f.submit %>
+<% end %>

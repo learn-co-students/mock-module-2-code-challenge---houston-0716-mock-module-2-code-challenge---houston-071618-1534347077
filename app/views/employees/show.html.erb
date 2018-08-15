@@ -1,0 +1,11 @@
+<!-- <%= link_to "< Back To All Employees", employees_path %> -->
+
+<h1><%= @employee.to_s %></h1>
+<ul>
+  <li>Alias: <%= @employee.alias %></li>
+  <li>Title: <%= @employee.title %></li>
+  <li>Office: <%= @employee.office %></li>
+  <li>Dog: <%= @employee.dog %></li>
+</ul>
+
+<img src=<%= @employee.img_url %> alt=<%= @employee.to_s %>>
