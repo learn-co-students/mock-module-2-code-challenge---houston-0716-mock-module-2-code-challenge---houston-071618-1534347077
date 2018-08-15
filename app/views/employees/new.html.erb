@@ -1,0 +1,25 @@
+<%= form_with model: @employee do |form| %>
+	<%= form.label :first_name %>
+	<%= form.text_field :first_name %>
+	<br>
+	<%= form.label :last_name %>
+	<%= form.text_field :last_name %>
+	<br>
+	<%= form.label :alias %>
+	<%= form.text_field :alias %>
+	<br>
+	<%= form.label :title %>
+	<%= form.text_field :title %>
+	<br>
+	<%= form.label :office %>
+	<%= form.text_field :office %>
+	<br>
+	<%= form.label :img_url %>
+	<%= form.text_field :im_url %>
+	<br>
+	
+	<%= form.select :dog_id, Dog.all.map { |dog| [dog.name, dog.id]} %>
+
+	<%= form.submit %>
+
+<% end %>
