@@ -1,0 +1,7 @@
+<h1> Current dog list </h1>
+<ul>
+  <% @dog.each do |dog| %>
+    <li><%= link_to dog.name, dog %></li>
+  <% end %>
+  <h5><%= link_to 'New dog', new_dog_path %></h5>
+</ul>

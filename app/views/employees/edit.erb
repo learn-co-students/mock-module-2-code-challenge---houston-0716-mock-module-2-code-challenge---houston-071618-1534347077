@@ -1,0 +1,14 @@
+<h1>Employee edit</h1>
+<%= form_with model: @employee do |form| %>
+  <%= form.text_field :first_name, placeholder: 'first_name' %>
+  <%= form.text_field :last_name, placeholder: 'last_name' %>
+  <%= form.text_field :alias, placeholder: 'alias' %>
+  <%= form.text_field :title, placeholder: 'title' %>
+  <%= form.text_field :office, placeholder: 'office' %>
+  <%= form.text_field :img_url, placeholder: 'img_url' %>
+  <%= form.text_field :dog_id, placeholder: 'dog_id' %>
+
+ 
+  <%= form.submit %>
+<% end %>
+<h6><%= link_to 'home', employees_path %></h6> 
