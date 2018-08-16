@@ -1,0 +1,21 @@
+<h1>Edit <%= @dog.name %></h1>
+<%= form_with model:Dog.new do | form | %>
+    <div>
+        <label>Dog Name:</label>
+        <%= form.text_field :name %>
+    </div>
+    <div>
+        <label>Breed:</label>
+        <%= form.text_field :breed %>
+    </div>
+    <div>
+        <label>Age:</label>
+        <%= form.text_field :age %>
+    </div>
+		<div>
+			<label>Owner:</label>
+				 <%= form.select :employee_id, Employee.all.map { |employee| [ employee.first_name, employee.id ] } %>	
+		</div> 
+    <%= form.submit %>
+<% end %><br><br>
+<%= link_to 'Back', :back %>

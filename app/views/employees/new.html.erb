@@ -1,0 +1,32 @@
+<h1>Create New Employee</h1>
+<%= form_with model:Employee.new do | form | %>
+    <div>
+        <label>Employee First Name:</label>
+        <%= form.text_field :first_name %>
+    </div>
+    <div>
+        <label>Employee Last Name:</label>
+        <%= form.text_field :last_name %>
+    </div>
+    <div>
+        <label>Alias:</label>
+        <%= form.text_field :alias %>
+    </div>
+		<div>
+        <label>Title:</label>
+        <%= form.text_field :title %>
+    </div>
+		<div>
+        <label>Office:</label>
+        <%= form.text_field :office %>
+    </div>
+		<div>
+        <label>Image URL:</label>
+        <%= form.text_field :img_url %>
+    </div>
+		<div>
+			<label>Select Dog:</label>
+				 <%= form.select :dog_id, Dog.all.map { |dog| [ dog.name, dog.id ] } %>	
+		</div>
+    <%= form.submit %>
+<% end %><br><br>
